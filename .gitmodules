@@ -1,0 +1,4 @@
+[submodule "cryptpad"]
+	path = cryptpad
+	url = https://github.com/xwiki-labs/cryptpad
+	branch = main
