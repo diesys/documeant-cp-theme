@@ -43,8 +43,8 @@
 }
 
 @keyframes fade-in {
-    0% {filter: opacity(0);}
-    100% {filter: opacity(1);}
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .cp-toolbar-container *:not(.fa), #cp-app-pad-editor *:not(.fa) {
@@ -61,7 +61,7 @@ body.cp-app-pad .cke_toolbox_main {
 
 /* title toolbar */
 .cp-toolbar {
-    background: #737373;
+    background: #474747;
     padding-top: .25em;
     color: #fff;
     text-shadow: 1px 2px 3px #0004 !important;
@@ -152,6 +152,8 @@ body.cp-app-pad input:not(.form-control) {
 /* voci menu "file" */
 .cp-toolbar-bottom .cp-toolbar-bottom-left .cp-toolbar-drawer-content button:hover {
     background-color: #ddd !important;
+    color: #222 !important;
+    box-shadow: none !important;
 }
 
 /* bottoni e select toolbar */
@@ -190,17 +192,25 @@ body.cp-app-pad input:not(.form-control) {
 }
 
 /* drawers laterali */
-body.cp-app-pad .cke_toolbox_main,
+.cp-app-pad .cke_toolbox_main,
 .cp-toolbar-userlist-drawer,
 .cp-toolbar-chat-drawer {
-    box-shadow: 0 0 1em #0003 !important;
+    box-shadow: 0 0 1em #0003;
+}
+
+/* sfondo documento */
+/* .cke_inner {
+    background: #e3e3e3;
+} */
+.cp-app-pad .cke_contents {
+    /* background: none !important; */
+    background: #e3e3e3 !important;
 }
 
 /* frame documento */
-body.cp-app-pad .cke_wysiwyg_frame {
+.cp-app-pad .cke_wysiwyg_frame {
     box-shadow: 0 .5em 1em -.2em #2225;
     margin: 20px 30px !important;
-    border-radius: .25rem;
 }
 
 /* notifiche */
@@ -293,17 +303,39 @@ button, .btn {
     border: none !important
 }
 
+/* CODE */
+.cp-app-code #cp-app-code-preview,
+.cp-app-slide-viewer {
+    border-left: 1px solid #0007 !important;
+}
+
 /* DRIVE */
+.cp-body-drive #cp-app-drive-content {
+    /* background: #e3e3e3 !important; */
+    background: #e4e4e4 !important;
+    color: #222 !important;
+    /* box-shadow: 0 0 1em #0003; */
+}
 /* info */
 .cp-body-drive #cp-app-drive-content .cp-app-drive-content-info-box {
     border-radius: .4em;
+    color: #222c;
     box-shadow: 0 3px 1em -10px #0003;
 }
-
+#cp-app-drive-content-folder ul li {
+    cursor: pointer !important;
+    transition: filter .4s;
+    filter: opacity(1);
+}
+#cp-app-drive-content-folder ul li:hover,
+#cp-app-drive-content-folder ul li:focus,
+#cp-app-drive-content-folder ul li:active {
+    filter: opacity(.5);
+}
 .cp-app-drive-content-grid .cp-app-drive-element, .cp-app-drive-content-grid .cp-app-drive-new-ghost {
     border-radius: .7em;
-    border-width: 3px !important;
-    cursor: pointer !important;
+    border-width: 2px !important;
+    box-shadow: 0 .3em 1em -.2em #0003;
 }
 .cp-app-drive-element, .cp-app-drive-new-ghost {
     transition: all .4s;
@@ -314,13 +346,18 @@ button, .btn {
     justify-content: center;
 }
 
+.cp-body-drive #cp-app-drive-content .cp-app-drive-content-list li.cp-app-drive-element-header > span.cp-app-drive-sort-clickable:hover {
+    background: none;
+}
+
 .cp-body-drive #cp-app-drive-tree {
     background: #fff;
-    border-right: 2px dashed #ddd;
+    border-right: 1px solid #2224;
 }
 /* active item */
 .cp-body-drive #cp-app-drive-tree .cp-app-drive-tree-category li .cp-app-drive-element-row.cp-leftside-active {
-    border-bottom: 2px solid #ddd;
+    background: #2224 !important;
+    /* border-right: 3px solid #0008; */
 }
 
 /* KANBAN */
@@ -332,6 +369,22 @@ button, .btn {
 .cp-app-kanban {
     animation: fade-in .5s;
 }
+
+/* tag list */
+#cp-kanban-controls {
+    background: #fff;
+    display: flex;
+    align-items: center;
+}
+.cp-kanban-filterTags-list span, .kanban-item-tags span {
+    border-radius: 1em;
+    border: 1px solid #0002;
+    color: #444d !important;
+    padding: 3px 7px !important;
+    background: none !important;
+    font-size: .8rem !important;
+}
+
 .cp-app-kanban .kanban-board header {
     /* background-color: #f4f4f4; */
     text-align: center;
@@ -420,3 +473,80 @@ button, .btn {
     box-shadow: 0 10px 1em #0003;
     margin: auto .5em;
 }
+
+/* app bgs and panels */
+/* .cp-app-slide div#cp-app-slide-modal,
+.cp-toolbar-userlist-drawer,
+#cp-app-contacts-messaging .cp-app-contacts-header, */
+
+/* toolbars */
+/* .cp-markdown-toolbar,
+.cp-toolbar-bottom .cp-toolbar-bottom-left .cp-toolbar-drawer-content, */
+
+
+
+
+/*====================================================== dark */
+/* .cke_toolbox_main,
+.cp-toolbar-userlist-drawer, 
+.cp-toolbar-chat-drawer,
+.cp-toolbar-drawer-content,
+.cp-app-poll-content,
+.cp-body-drive #cp-app-drive-content {
+    box-shadow: 0 0 1em #fffc !important;
+    filter: invert(1);
+}
+#cp-app-whiteboard-controls {
+    filter: invert(1);
+    box-shadow: 0 0 1em #fffc inset !important;
+}
+.cp-app-whiteboard #cp-app-whiteboard-colors span.cp-app-whiteboard-palette-color {
+    border: 1px solid #0004 !important;
+}
+.cp-app-whiteboard .cp-app-whiteboard-canvas-container {
+    background: #111 !important;
+    border-bottom: 1px solid #6664;
+}
+.cke_inner,
+.alertify .dialog > div,
+.cp-body-drive #cp-app-drive-tree,
+.cp-toolbar-bottom button:hover, 
+.cp-toolbar-bottom button.cp-toolbar-button-active,
+#cp-app-code-preview {
+    background: #222 !important;
+    color: #ddd !important;
+}
+#cp-kanban-controls,
+.cp-app-slide div#cp-app-slide-modal {
+    background: #222 !important;
+}
+#cp-kanban-controls > * {
+    filter: invert(1);
+}
+.cp-toolbar-drawer-content,
+.cp-app-whiteboard-selected,
+.cp-app-whiteboard-unselectable,
+#cp-app-whiteboard-colors {
+    filter: invert(1);
+}
+.cp-body-drive #cp-app-drive-content .cp-app-drive-content-list li.cp-app-drive-element-header,
+.cp-body-drive #cp-app-drive-content,
+.cp-body-drive #cp-app-drive-content > .cp-app-drive-path .cp-app-drive-path-inner .cp-app-drive-path-element {
+    color: #eee !important;
+} 
+.cp-app-pad .cke_contents,
+#cp-app-kanban-content {
+    background: #474747 !important;
+}
+.cp-body-drive #cp-app-drive-content {
+    background: #474747 !important;
+    box-shadow: 0 0 1em #0007;
+} */
+
+/* 
+
+TODO
+- voci menu file dark non funziona
+- voci menu file box-shadow? 
+
+*/
