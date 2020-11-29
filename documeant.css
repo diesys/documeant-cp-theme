@@ -30,6 +30,17 @@
 .cp-spinner {
     filter: invert(1) opacity(.25);
 }
+
+/* disabling default icon */
+.cp-loading-logo > img {
+    display: none;
+}
+/* adding documeant icon */
+.cp-loading-logo {
+    background: url('https://i.postimg.cc/y85NbmmT/logo.png') no-repeat;
+    background-size: contain;
+    background-position: center center;
+}
 /* ======================= */
 
 @keyframes top-reveal {
@@ -59,18 +70,6 @@ body.cp-app-pad .cke_toolbox_main {
     background: none !important;
 }
 
-/* app logo */
-.cp-toolbar-link-logo {
-
-}
-
-/* title toolbar */
-.cp-toolbar {
-    background: #474747;
-    padding-top: .25em;
-    color: #fff;
-    text-shadow: 1px 2px 3px #0004 !important;
-}
 
 /* COLORI PER APP */
 .cp-app-pad .cp-toolbar {background: #3d69ae;}
@@ -111,8 +110,32 @@ body.cp-app-pad input:not(.form-control) {
 .cp-toolbar-top .cp-toolbar-user .cp-toolbar-user-dropdown,
 .cp-toolbar-top .cp-toolbar-user .cp-toolbar-user-dropdown > button,
 .cp-toolbar-top .cp-toolbar-notifications > button,
-.cp-toolbar-top .cp-toolbar-link, .cp-toolbar-top .cp-toolbar-notifications {
+.cp-toolbar-top .cp-toolbar-notifications {
     height: 3em !important;
+}
+
+/* app logo */
+/* disabling default logo and adding the documeant one */
+.cp-toolbar-top .cp-toolbar-link {
+    background: url('https://i.postimg.cc/6Qh5fL4Q/logo-mono.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: calc(3em - 5px) !important;
+    width: 3em !important;
+    margin-left: .5em;
+    filter: opacity(.8);
+}
+.cp-toolbar-link svg {
+    display: none !important;
+}
+
+/* title toolbar */
+.cp-toolbar {
+    background: #474747;
+    padding-top: .25em;
+    color: #fff;
+    text-shadow: 1px 2px 3px #0004 !important;
 }
 
 /* toolbar bottom */
