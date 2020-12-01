@@ -1,0 +1,56 @@
+/* ====================================================== dark */
+.cke_toolbox_main,
+.cp-toolbar-userlist-drawer, 
+.cp-toolbar-chat-drawer,
+.cp-toolbar-drawer-content,
+.cp-app-poll-content,
+.cp-body-drive #cp-app-drive-content {
+    box-shadow: 0 0 1em #fffc !important;
+    filter: invert(1);
+}
+#cp-app-whiteboard-controls {
+    filter: invert(1);
+    box-shadow: 0 0 1em #fffc inset !important;
+}
+.cp-app-whiteboard #cp-app-whiteboard-colors span.cp-app-whiteboard-palette-color {
+    border: 1px solid #0004 !important;
+}
+.cp-app-whiteboard .cp-app-whiteboard-canvas-container {
+    background: #111 !important; 
+    border-bottom: 1px solid #6664;
+}
+.cke_inner,
+.alertify .dialog > div,
+.cp-body-drive #cp-app-drive-tree,
+.cp-toolbar-bottom button:hover, 
+.cp-toolbar-bottom button.cp-toolbar-button-active,
+#cp-app-code-preview {
+    background: #222 !important;
+    color: #ddd !important;
+}
+#cp-kanban-controls,
+.cp-app-slide div#cp-app-slide-modal {
+    background: #222 !important;
+}
+#cp-kanban-controls > * {
+    filter: invert(1);
+}
+.cp-toolbar-drawer-content,
+.cp-app-whiteboard-selected,
+.cp-app-whiteboard-unselectable,
+#cp-app-whiteboard-colors {
+    filter: invert(1);
+}
+.cp-body-drive #cp-app-drive-content .cp-app-drive-content-list li.cp-app-drive-element-header,
+.cp-body-drive #cp-app-drive-content,
+.cp-body-drive #cp-app-drive-content > .cp-app-drive-path .cp-app-drive-path-inner .cp-app-drive-path-element {
+    color: #eee !important;
+} 
+.cp-app-pad .cke_contents,
+#cp-app-kanban-content {
+    background: #474747 !important;
+}
+.cp-body-drive #cp-app-drive-content {
+    background: #474747 !important;
+    box-shadow: 0 0 1em #0007;
+}
