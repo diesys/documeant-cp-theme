@@ -5,9 +5,7 @@ A user-friendly, beautiful and modern theme for [CryptPad](https://github.com/xw
 ![theme showcase](https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/documeant-theme.png)
 
 ### Prerequisites
- * CryptPad
-
-Check the [CryptPad installation guide](https://github.com/xwiki-labs/cryptpad/wiki/Installation-guide).
+ * CryptPad [installation guide](https://github.com/xwiki-labs/cryptpad/wiki/Installation-guide)
 
 ### Screenshots
 ![showcase](https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/screens/screens.gif)
