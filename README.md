@@ -1,6 +1,8 @@
-![theme showcase](https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/documeant-theme.png)
 # documeant-cp-theme
 A user-friendly, beautiful and modern theme for [CryptPad](https://github.com/xwiki-labs/cryptpad): some CSS and images/icons, **still under development**.
+*Doc*uments as *U* *meant* them to be.
+
+![theme showcase](https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/documeant-theme.png)
 
 ### Prerequisites
  * CryptPad
