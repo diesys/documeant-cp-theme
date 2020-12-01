@@ -6,9 +6,10 @@ A user-friendly, beautiful and modern theme for [CryptPad](https://github.com/xw
 
 ### Prerequisites
  * CryptPad
+
 Check the [CryptPad installation guide](https://github.com/xwiki-labs/cryptpad/wiki/Installation-guide).
 
-<!-- ### Screenshots -->
+### Screenshots
 ![showcase](https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/screens/screens.gif)
 
 ### Enabling the theme
@@ -21,4 +22,4 @@ Here are some examples:
  * [Safari guide](https://developer.apple.com/documentation/safariservices/safari_app_extensions/injecting_css_style_sheets_into_a_webpage)
 
 ##### Dark
-The dark theme just replaces the background color of the lightest (white) part of the page. Must be included **AFTER** the main `documeant.css`
+The dark theme just replaces the background color of the lightest (white) part of the page. Must include `documeant-dark-theme.css` **AFTER** the main `documeant.css`.
