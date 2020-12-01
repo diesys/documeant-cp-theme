@@ -43,16 +43,6 @@
 }
 /* ======================= */
 
-@keyframes top-reveal {
-    0% {transform: translateY(-100%);}
-    100% {transform: translateY(0);}
-}
-
-@keyframes left-reveal {
-    0% {transform: translateX(-100%);}
-    100% {transform: translateX(0);}
-}
-
 @keyframes fade-in {
     0% {opacity: 0;}
     100% {opacity: 1;}
@@ -65,11 +55,9 @@
 /* toolbar */
 body.cp-app-pad .cke_toolbox_main {
     z-index: 1;
-    /* animation: top-reveal .4s; */
     animation: fade-in .5s;
     background: none !important;
 }
-
 
 /* COLORI PER APP */
 .cp-app-pad .cp-toolbar {background: #3d7ccc;}
@@ -215,7 +203,6 @@ body.cp-app-pad input:not(.form-control) {
 .cp-toolbar button *:not(.fa) {
     font: .9rem 'Helvetica Neue', sans-serif !important;
     font-weight: 500 !important;
-    /* text-transform: uppercase; */
 }
 
 /* drawers laterali */
@@ -226,11 +213,7 @@ body.cp-app-pad input:not(.form-control) {
 }
 
 /* sfondo documento */
-/* .cke_inner {
-    background: #e3e3e3;
-} */
 .cp-app-pad .cke_contents {
-    /* background: none !important; */
     background: #e3e3e3 !important;
 }
 
@@ -338,10 +321,8 @@ button, .btn {
 
 /* DRIVE */
 .cp-body-drive #cp-app-drive-content {
-    /* background: #e3e3e3 !important; */
     background: #e4e4e4 !important;
     color: #222 !important;
-    /* box-shadow: 0 0 1em #0003; */
 }
 /* info */
 .cp-body-drive #cp-app-drive-content .cp-app-drive-content-info-box {
@@ -384,7 +365,6 @@ button, .btn {
 /* active item */
 .cp-body-drive #cp-app-drive-tree .cp-app-drive-tree-category li .cp-app-drive-element-row.cp-leftside-active {
     background: #2224 !important;
-    /* border-right: 3px solid #0008; */
 }
 
 /* KANBAN */
@@ -413,7 +393,6 @@ button, .btn {
 }
 
 .cp-app-kanban .kanban-board header {
-    /* background-color: #f4f4f4; */
     text-align: center;
     margin-right: 0 !important;
 }
@@ -500,12 +479,3 @@ button, .btn {
     box-shadow: 0 10px 1em #0003;
     margin: auto .5em;
 }
-
-/* app bgs and panels */
-/* .cp-app-slide div#cp-app-slide-modal,
-.cp-toolbar-userlist-drawer,
-#cp-app-contacts-messaging .cp-app-contacts-header, */
-
-/* toolbars */
-/* .cp-markdown-toolbar,
-.cp-toolbar-bottom .cp-toolbar-bottom-left .cp-toolbar-drawer-content, */
