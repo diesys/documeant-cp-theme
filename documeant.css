@@ -72,13 +72,13 @@ body.cp-app-pad .cke_toolbox_main {
 
 
 /* COLORI PER APP */
-.cp-app-pad .cp-toolbar {background: #3d69ae;}
-.cp-app-whiteboard .cp-toolbar {background: #975797;}
-.cp-app-kanban .cp-toolbar {background: #57753a;}
-.cp-app-slide .cp-toolbar {background: #b36c2e;}
-.cp-app-poll .cp-toolbar {background: #339f9a;}
-.cp-app-code .cp-toolbar {background: #bb8e07;}
-.cp-app-sheet .cp-toolbar {background: #40865c;}
+.cp-app-pad .cp-toolbar {background: #3d7ccc;}
+.cp-app-whiteboard .cp-toolbar {background: #d9618f;}
+.cp-app-kanban .cp-toolbar {background: #97bd20;}
+.cp-app-slide .cp-toolbar {background: #c44e3e;}
+.cp-app-poll .cp-toolbar {background: #30ada9;}
+.cp-app-code .cp-toolbar {background: #cc892c;}
+.cp-app-sheet .cp-toolbar,.toolbar .box-tabs .extra, .toolbar .tabs {background: #2fad32;}
 
 /* titolo documento */ 
 .cp-toolbar-top .cp-toolbar-title, .cp-toolbar-spinner {
