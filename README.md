@@ -21,6 +21,6 @@ Here are some examples:
 
 CSS to include:
  * [documeant.css](https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/documeant.css)
- * [documeant-dark-theme.css](https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/documeant-dark-theme.css) (optional)
+ * optional - [documeant-dark-theme.css](https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/documeant-dark-theme.css)
 
 The dark theme just replaces the background color of the lightest (white) part of the page. Must include `documeant-dark-theme.css` **AFTER** the main `documeant.css`.
