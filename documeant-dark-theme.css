@@ -1,4 +1,11 @@
 /* ====================================================== dark */
+#cp-loading {
+    filter: invert(1);
+}
+.cp-loading-logo {
+    background: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/logotype-dark.png') no-repeat;
+}
+
 .cke_toolbox_main,
 .cp-toolbar-userlist-drawer, 
 .cp-toolbar-chat-drawer,
@@ -54,3 +61,15 @@
     background: #474747 !important;
     box-shadow: 0 0 1em #0007;
 }
+
+/* CALC SHEET  onlyoffice */
+#viewport {
+    filter: invert(1);
+}
+.box-tabs {
+    filter: invert(1);
+}
+.toolbar .tabs li.active {
+    filter: invert(1);
+}
+  
