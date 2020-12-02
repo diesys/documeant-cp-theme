@@ -153,12 +153,15 @@ body.cp-app-pad .cke_toolbox_main {
     color: #fff !important;
     text-shadow: 0 1px 3px #0005;
 }
+.cp-body-drive #cp-app-drive-content .cp-app-drive-content-list li:not(.cp-app-drive-element-header) {
+    height: auto;
+}
 .cp-body-drive #cp-app-drive-content-folder,
 .cp-body-drive #cp-app-drive-content .cp-app-drive-content-list {
     padding: 0 !important;
 }
 .cp-body-drive .cp-app-drive-element-folder .cp-app-drive-element-name,
-.cp-body-drive li.cp-app-drive-element-list .cp-app-drive-element-name,
+.cp-body-drive .cp-app-drive-element-list .cp-app-drive-element-name,
 .cp-body-drive .cp-app-drive-new-ghost .cp-app-drive-element-name {
     color: #333 !important;
     text-shadow: none !important;
