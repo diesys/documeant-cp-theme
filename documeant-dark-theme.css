@@ -1,11 +1,11 @@
 /* ====================================================== dark */
-#cp-loading {
+#cp-loading,.cp-loading-progress-bar-value, .cp-loading-logo {
     filter: invert(1);
 }
 .cp-loading-logo {
-    background: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/logotype-dark.png') no-repeat;
+    filter: invert(1);
+    background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/logotype-dark.png');
 }
-
 .cke_toolbox_main,
 .cp-toolbar-userlist-drawer, 
 .cp-toolbar-chat-drawer,
