@@ -48,10 +48,6 @@
     100% {opacity: 1;}
 }
 
-.cp-toolbar-container *:not(.fa), #cp-app-pad-editor *:not(.fa) {
-    font-family: 'Helvetica Neue', sans-serif !important;
-}
-
 /* toolbar */
 body.cp-app-pad .cke_toolbox_main {
     z-index: 1;
@@ -95,51 +91,19 @@ body.cp-app-pad .cke_toolbox_main {
     /* border-color: var(--clr-pad) !important; */
     background-color: var(--clr-pad) !important;
 }
-.cptools-pad::before {
-    background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-text.png');
-}
-.cp-border-color-poll {
-    /* border-color: var(--clr-poll) !important; */
-    background-color: var(--clr-poll) !important;
-}
-.cptools-poll::before {
-    background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-poll.png');
-}
-.cp-border-color-code {
-    /* border-color: var(--clr-code) !important; */
-    background-color: var(--clr-code) !important;
-}
-.cptools-code::before {
-    background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-code.png');
-}
-.cp-border-color-slide {
-    /* border-color: var(--clr-slide) !important; */
-    background-color: var(--clr-slide) !important;
-}
-.cptools-slide::before {
-    background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-slide.png');
-}
-.cp-border-color-kanban {
-    /* border-color: var(--clr-kanban) !important; */
-    background-color: var(--clr-kanban) !important;
-}
-.cptools-kanban::before {
-    background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-kanban.png');
-}
-.cp-border-color-whiteboard {
-    /* border-color: var(--clr-whiteboard) !important; */
-    background-color: var(--clr-whiteboard) !important;
-}
-.cptools-whiteboard::before {
-    background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-board.png');
-}
-.cp-border-color-sheet {
-    /* border-color: var(--clr-sheet) !important; */
-    background-color: var(--clr-sheet) !important;
-}
-.fa-file-excel-o::before {
-    background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-sheet.png');
-}
+.cptools-pad::before {background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-text.png');}
+.cp-border-color-poll {background-color: var(--clr-poll) !important;}
+.cptools-poll::before {background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-poll.png');}
+.cp-border-color-code {background-color: var(--clr-code) !important;}
+.cptools-code::before {background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-code.png');}
+.cp-border-color-slide {background-color: var(--clr-slide) !important;}
+.cptools-slide::before {background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-slide.png');}
+.cp-border-color-kanban {background-color: var(--clr-kanban) !important;}
+.cptools-kanban::before {background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-kanban.png');}
+.cp-border-color-whiteboard {background-color: var(--clr-whiteboard) !important;}
+.cptools-whiteboard::before {background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-board.png');}
+.cp-border-color-sheet {background-color: var(--clr-sheet) !important;}
+.fa-file-excel-o::before {background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-sheet.png');}
 
 /* DRIVE */
 .cp-body-drive #cp-app-drive-content {
@@ -147,24 +111,43 @@ body.cp-app-pad .cke_toolbox_main {
     color: #222 !important;
 }
 /* icons */
-.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li:not(.cp-app-drive-element-list) {
+.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li:not(.cp-app-drive-element-list):not(.cp-app-drive-new-ghost) {
     display: flex !important;
     flex-direction: column;
     align-items: center;
     background: #bbb;
-    border: none !important;
+    box-shadow: 0 3px .5em #0003 inset;
+}
+.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li.cp-app-drive-element-selected {
+    background: #fffa !important;
+    font-weight: bold;
+    border-color: #3336 !important;
+    box-shadow: 0 .4em 1em -.2em #0004 !important;
+    filter: opacity(1) brightness(1.1) saturate(1);
+    color: #666 !important;
+}
+.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li.cp-app-drive-element-selected .cp-app-drive-element-name {
+    color: #666 !important;
+    text-shadow: none !important;
 }
 .cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li {
     transition: background .4s;
+    padding: 1em .7em .2em .7em !important;
+    height: min-content !important;
 }
 .cp-body-drive li {
-    padding: 0px 15px !important;
+    padding: .5em !important;
 }
 .cp-body-drive li .cp-app-drive-element-name {
     color: #fff !important;
-    text-shadow: 0 1px 3px #0005;
+    text-shadow: 0 1px 2px #0009;
 }
+
 /* list icons */
+.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li .fa, 
+.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li .cptools {
+    margin: 0 0 .15em 0;
+}
 .cp-body-drive #cp-app-drive-content .cp-app-drive-content-list li:not(.cp-app-drive-element-header):not(.cp-app-drive-element-folder) {
     align-items: center;
     color: #fff !important;
@@ -180,22 +163,20 @@ body.cp-app-pad .cke_toolbox_main {
     color: #333 !important;
     text-shadow: none !important;
 }
-/* selected icon */
-.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li.cp-app-drive-element-selected {
-    box-shadow: 0 3px 1em #0007 inset !important;
-    background: #0009 !important;
-}
-.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li.cp-app-drive-element-selected .cp-app-drive-element-name {
-    color: #fff !important;
-}
+
 /* mini state icons */
 .cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li .cp-app-drive-element-state {
     top: 4px;
     right: 6px;
-    color: #0007;
+    color: #fff8;
+    text-shadow: 0 1px 3px #0003;
     margin: 0 0 2px 0 !important;
 }
-
+.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li.cp-app-drive-element-folder .cp-app-drive-element-state,
+.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li.cp-app-drive-element-selected .cp-app-drive-element-state {
+    color: #0005;
+    text-shadow: 0 1px 3px #fff2;
+}
 
 /* info */
 .cp-body-drive #cp-app-drive-content .cp-app-drive-content-info-box {
@@ -206,20 +187,29 @@ body.cp-app-pad .cke_toolbox_main {
 #cp-app-drive-content-folder ul li {
     cursor: pointer !important;
     transition: filter .4s;
-    filter: opacity(1);
+    filter: opacity(.85) saturate(.75);
 }
 #cp-app-drive-content-folder ul li:hover,
 #cp-app-drive-content-folder ul li:focus,
 #cp-app-drive-content-folder ul li:active {
-    filter: opacity(.7);
+    filter: opacity(1) saturate(1.04);
 }
 .cp-app-drive-content-grid .cp-app-drive-element, .cp-app-drive-content-grid .cp-app-drive-new-ghost {
     border-radius: .7em;
-    border-width: 2px !important;
-    box-shadow: 0 .3em 1em -.2em #0003;
+    border: 1px solid #0003 !important;
+    /* box-shadow: 0 .3em 1em -.2em #0003; */
+}
+
+.cp-app-drive-content-grid .cp-app-drive-new-ghost {
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid .cp-app-drive-new-ghost .fa, .cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid .cp-app-drive-new-ghost .cptools {
+    font-size: 4em !important;
 }
 .cp-app-drive-element, .cp-app-drive-new-ghost {
-    transition: all .4s;
+    transition: all .4s !important;
     color: #555;
     opacity: .9 !important;
 }
@@ -374,7 +364,7 @@ body.cp-app-pad input:not(.form-control) {
 }
 
 .cp-toolbar button *:not(.fa) {
-    font: .9rem 'Helvetica Neue', sans-serif !important;
+    font-size: .9rem !important;
     font-weight: 500 !important;
 }
 
