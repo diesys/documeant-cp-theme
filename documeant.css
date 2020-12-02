@@ -3,6 +3,9 @@
     background: linear-gradient(to top, #bbbd 0%, #eeee 60%);
     color: #555;
 }
+.cp-loading-progress {
+    text-align: center !important;
+}
 .cp-loading-progress-container {
     height: 1em;
 }
