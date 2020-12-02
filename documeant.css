@@ -180,8 +180,10 @@ body.cp-app-pad .cke_toolbox_main {
 /* selected icon */
 .cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li.cp-app-drive-element-selected {
     box-shadow: 0 3px 1em #0007 inset !important;
-    /* border: 2px solid #0005 !important; */
     background: #0009 !important;
+}
+.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li.cp-app-drive-element-selected .cp-app-drive-element-name {
+    color: #fff !important;
 }
 /* mini state icons */
 .cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li .cp-app-drive-element-state {
