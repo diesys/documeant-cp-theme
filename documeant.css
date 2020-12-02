@@ -161,10 +161,23 @@ body.cp-app-pad .cke_toolbox_main {
     color: #fff !important;
     text-shadow: 0 1px 3px #0005;
 }
+/* list icons */
+.cp-body-drive #cp-app-drive-content .cp-app-drive-content-list li:not(.cp-app-drive-element-header):not(.cp-app-drive-element-folder) {
+    align-items: center;
+    color: #fff !important;
+    text-shadow: 0 1px 3px #0005;
+}
 .cp-body-drive .cp-app-drive-element-folder .cp-app-drive-element-name,
+.cp-body-drive li.cp-app-drive-element-list .cp-app-drive-element-name,
 .cp-body-drive .cp-app-drive-new-ghost .cp-app-drive-element-name {
     color: #333 !important;
     text-shadow: none !important;
+}
+/* selected icon */
+.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li.cp-app-drive-element-selected {
+    box-shadow: 0 3px 1em #0007 inset !important;
+    /* border: 2px solid #0005 !important; */
+    background: #0009 !important;
 }
 /* mini state icons */
 .cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li .cp-app-drive-element-state {
@@ -173,6 +186,8 @@ body.cp-app-pad .cke_toolbox_main {
     color: #0007;
     margin: 0 0 2px 0 !important;
 }
+
+
 /* info */
 .cp-body-drive #cp-app-drive-content .cp-app-drive-content-info-box {
     border-radius: .4em;

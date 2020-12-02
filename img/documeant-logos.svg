@@ -412,7 +412,7 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.6419753"
-     inkscape:cx="309.58842"
+     inkscape:cx="333.26417"
      inkscape:cy="233.52971"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -745,8 +745,8 @@
     <g
        id="g7525"
        transform="translate(-338.66682,-486.83358)"
-       inkscape:export-xdpi="168.34264"
-       inkscape:export-ydpi="168.34264">
+       inkscape:export-xdpi="170.67796"
+       inkscape:export-ydpi="170.67796">
       <g
          id="g6744"
          transform="translate(301.62512,47.625002)"
@@ -756,7 +756,7 @@
            transform="matrix(0.88424976,0,0,0.88424976,21.909713,273.39325)">
           <path
              id="path6736"
-             style="opacity:1;fill:#f5679d;fill-opacity:1;stroke:none;stroke-width:0.233461;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+             style="opacity:1;fill:#f783af;fill-opacity:1;stroke:none;stroke-width:0.233461;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
              d="m 180.86942,296.27673 h 16.82989 v 11.85515 c 0,0 -5.04099,5.0243 -4.97475,4.97475 h -11.85514 z"
              sodipodi:nodetypes="cccccc" />
           <path
