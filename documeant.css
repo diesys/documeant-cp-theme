@@ -58,21 +58,169 @@ body.cp-app-pad .cke_toolbox_main {
     animation: fade-in .5s;
     background: none !important;
 }
-
+:root {
+    --clr-pad: #3d7ccc;
+    --clr-whiteboard: #d9618f;
+    --clr-kanban: #97bd20;
+    --clr-slide: #c44e3e;
+    --clr-poll: #30ada9;
+    --clr-code: #cc892c;
+    --clr-sheet: #2fad32;
+}
 /* COLORI PER APP */
-.cp-app-pad .cp-toolbar {background: #3d7ccc;}
-.cp-app-whiteboard .cp-toolbar {background: #d9618f;}
-.cp-app-kanban .cp-toolbar {background: #97bd20;}
-.cp-app-slide .cp-toolbar {background: #c44e3e;}
-.cp-app-poll .cp-toolbar {background: #30ada9;}
-.cp-app-code .cp-toolbar {background: #cc892c;}
-.cp-app-sheet .cp-toolbar,.toolbar .box-tabs .extra, .toolbar .tabs {background: #2fad32;}
+.cp-app-pad .cp-toolbar {background: var(--clr-pad);}
+.cp-app-whiteboard .cp-toolbar {background: var(--clr-whiteboard);}
+.cp-app-kanban .cp-toolbar {background: var(--clr-kanban);}
+.cp-app-slide .cp-toolbar {background: var(--clr-slide);}
+.cp-app-poll .cp-toolbar {background: var(--clr-poll);}
+.cp-app-code .cp-toolbar {background: var(--clr-code);}
+.cp-app-sheet .cp-toolbar,.toolbar .box-tabs .extra, .toolbar .tabs {background: var(--clr-sheet);}
+
+/* ICONE FILES */
+.cptools-pad::before,
+.cptools-poll::before,
+.cptools-code::before,
+.cptools-slide::before,
+.cptools-kanban::before,
+.cptools-whiteboard::before,
+.fa-file-excel-o::before {
+    content: '' !important;
+    display: block !important;
+    height: 1em !important;
+    width: 1em !important;
+    background-position: center center !important;
+    background-size: contain;
+}
+.cp-border-color-pad {
+    /* border-color: var(--clr-pad) !important; */
+    background-color: var(--clr-pad) !important;
+}
+.cptools-pad::before {
+    background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-text.png');
+}
+.cp-border-color-poll {
+    /* border-color: var(--clr-poll) !important; */
+    background-color: var(--clr-poll) !important;
+}
+.cptools-poll::before {
+    background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-poll.png');
+}
+.cp-border-color-code {
+    /* border-color: var(--clr-code) !important; */
+    background-color: var(--clr-code) !important;
+}
+.cptools-code::before {
+    background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-code.png');
+}
+.cp-border-color-slide {
+    /* border-color: var(--clr-slide) !important; */
+    background-color: var(--clr-slide) !important;
+}
+.cptools-slide::before {
+    background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-slide.png');
+}
+.cp-border-color-kanban {
+    /* border-color: var(--clr-kanban) !important; */
+    background-color: var(--clr-kanban) !important;
+}
+.cptools-kanban::before {
+    background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-kanban.png');
+}
+.cp-border-color-whiteboard {
+    /* border-color: var(--clr-whiteboard) !important; */
+    background-color: var(--clr-whiteboard) !important;
+}
+.cptools-whiteboard::before {
+    background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-board.png');
+}
+.cp-border-color-sheet {
+    /* border-color: var(--clr-sheet) !important; */
+    background-color: var(--clr-sheet) !important;
+}
+.fa-file-excel-o::before {
+    background-image: url('https://raw.githubusercontent.com/diesys/documeant-cp-theme/master/img/icon-sheet.png');
+}
+
+/* DRIVE */
+.cp-body-drive #cp-app-drive-content {
+    background: #e4e4e4 !important;
+    color: #222 !important;
+}
+/* icons */
+.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li:not(.cp-app-drive-element-list) {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    background: #bbb;
+    border: none !important;
+}
+.cp-body-drive li {
+    padding: 0px 15px !important;
+}
+.cp-body-drive li .cp-app-drive-element-name {
+    color: #fff !important;
+    text-shadow: 0 1px 3px #0005;
+}
+.cp-body-drive .cp-app-drive-element-folder .cp-app-drive-element-name,
+.cp-body-drive .cp-app-drive-new-ghost .cp-app-drive-element-name {
+    color: #333 !important;
+    text-shadow: none !important;
+}
+/* mini state icons */
+.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li .cp-app-drive-element-state {
+    top: 5px;
+    right: 5px;
+    opacity: .6;
+}
+/* info */
+.cp-body-drive #cp-app-drive-content .cp-app-drive-content-info-box {
+    border-radius: .4em;
+    color: #222c;
+    box-shadow: 0 3px 1em -10px #0003;
+}
+#cp-app-drive-content-folder ul li {
+    cursor: pointer !important;
+    transition: filter .4s;
+    filter: opacity(1);
+}
+#cp-app-drive-content-folder ul li:hover,
+#cp-app-drive-content-folder ul li:focus,
+#cp-app-drive-content-folder ul li:active {
+    filter: opacity(.7);
+}
+.cp-app-drive-content-grid .cp-app-drive-element, .cp-app-drive-content-grid .cp-app-drive-new-ghost {
+    border-radius: .7em;
+    border-width: 2px !important;
+    box-shadow: 0 .3em 1em -.2em #0003;
+}
+.cp-app-drive-element, .cp-app-drive-new-ghost {
+    transition: all .4s;
+    color: #555;
+    opacity: .9 !important;
+}
+.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cp-body-drive #cp-app-drive-content .cp-app-drive-content-list li.cp-app-drive-element-header > span.cp-app-drive-sort-clickable:hover {
+    background: none;
+}
+
+.cp-body-drive #cp-app-drive-tree {
+    background: #fff;
+    border-right: 1px solid #2224;
+}
+/* active item */
+.cp-body-drive #cp-app-drive-tree .cp-app-drive-tree-category li .cp-app-drive-element-row.cp-leftside-active {
+    background: #2224 !important;
+}
 
 /* titolo documento */ 
 .cp-toolbar-top .cp-toolbar-title, .cp-toolbar-spinner {
     color: #fff;
 }
-
 .cp-toolbar-top .cp-toolbar-title .cp-toolbar-title-value,
 .cp-toolbar-top .cp-toolbar-title input {
     font-size: 1.3em !important;
@@ -319,53 +467,6 @@ button, .btn {
     border-left: 1px solid #0007 !important;
 }
 
-/* DRIVE */
-.cp-body-drive #cp-app-drive-content {
-    background: #e4e4e4 !important;
-    color: #222 !important;
-}
-/* info */
-.cp-body-drive #cp-app-drive-content .cp-app-drive-content-info-box {
-    border-radius: .4em;
-    color: #222c;
-    box-shadow: 0 3px 1em -10px #0003;
-}
-#cp-app-drive-content-folder ul li {
-    cursor: pointer !important;
-    transition: filter .4s;
-    filter: opacity(1);
-}
-#cp-app-drive-content-folder ul li:hover,
-#cp-app-drive-content-folder ul li:focus,
-#cp-app-drive-content-folder ul li:active {
-    filter: opacity(.5);
-}
-.cp-app-drive-content-grid .cp-app-drive-element, .cp-app-drive-content-grid .cp-app-drive-new-ghost {
-    border-radius: .7em;
-    border-width: 2px !important;
-    box-shadow: 0 .3em 1em -.2em #0003;
-}
-.cp-app-drive-element, .cp-app-drive-new-ghost {
-    transition: all .4s;
-}
-.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.cp-body-drive #cp-app-drive-content .cp-app-drive-content-list li.cp-app-drive-element-header > span.cp-app-drive-sort-clickable:hover {
-    background: none;
-}
-
-.cp-body-drive #cp-app-drive-tree {
-    background: #fff;
-    border-right: 1px solid #2224;
-}
-/* active item */
-.cp-body-drive #cp-app-drive-tree .cp-app-drive-tree-category li .cp-app-drive-element-row.cp-leftside-active {
-    background: #2224 !important;
-}
 
 /* KANBAN */
 /* sfondo app */
