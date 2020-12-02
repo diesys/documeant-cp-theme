@@ -154,6 +154,9 @@ body.cp-app-pad .cke_toolbox_main {
     background: #bbb;
     border: none !important;
 }
+.cp-body-drive #cp-app-drive-content div.cp-app-drive-content-grid li {
+    transition: background .4s;
+}
 .cp-body-drive li {
     padding: 0px 15px !important;
 }
